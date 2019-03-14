@@ -36,8 +36,8 @@ h4 {
 }
 
 p {
-	font-size: 14px;
-	line-height: 21px;
+	font-size: .875em;
+	line-height: 1.3em;
 }
 
 ul {
@@ -56,7 +56,7 @@ header {
 }
 
 header h1 {
-	font-size: 30px;
+	font-size: 1.875em;
 	margin: 0;
 	padding: 38px 20px 20px 20px;
 	border-bottom: 3px solid #77a466;
@@ -77,7 +77,7 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: .875em;
 	padding: 10px 0;
 	list-style: none;
 }
@@ -107,8 +107,8 @@ header nav ul li a{
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
-	line-height: 25px;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 .section-one,
@@ -129,13 +129,13 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 16px;
-	line-height: 21px;
+	font-size: 1em;
+	line-height: 1.3em;
 }
 
 .address {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 1em;
+	line-height: 1.3em;
 }
 
 /*The widths are in a percentage!*/
@@ -152,5 +152,48 @@ footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: .875em;
+}
+
+@media only screen and (min-width: 768px) {
+	.bottom-section {
+		justify-content: space-between;
+		align-items: flex-start;
+		border-top: 1px solid #eee;
+	} 
+
+	.section-one,
+	.section-two,
+	.section-three {
+		border-top: none;
+		flex-basis: 30%;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding: 0 20px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	header {
+		justify-content: space-between;
+	}
+
+	header h1 {
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+	}
+
+	header nav {
+		width: 40%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
 }
